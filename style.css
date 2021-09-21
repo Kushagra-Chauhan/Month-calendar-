@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#calendar{
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+    background-size: cover;
+    background-image: url(Backimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+
+.container{
+    max-width: 81%;
+    font-family: sans-serif;
+    margin-left: 100px;
+    background:rgba(255,255,255,.2);
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+    /* padding: 40px; */
+    /* height: 800px; */
+    /* table-layout: fixed; */
+}
+
+.month{
+text-align: center;
+font-family: 'Carattere', cursive;
+font-size: 2em;
+background-position: center;
+padding: 10px;
+letter-spacing: 1px;
+color: white;
+/* border: 0.02px solid white; */
+}
+
+.text{
+    font-size: 20px;
+    font-family: 'Carattere', cursive;
+}
+
+table th, td{
+    width: 150px;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Carattere', cursive;
+    border-collapse: collapse;
+    cursor: pointer;
+    padding: 20px;
+    color: white;
+    /* border: 0.02px solid white; */
+}
+
+td, th, td{
+    /* padding: 30px; */
+    justify-content: center;
+}
+
+tr td{
+    font-size: 25px;
+}
+
+td, th{
+  width: fit-content;
+}
+
+td:hover{
+    background-color: rgba(255,255,255,.1);
+    box-shadow: 5px 5px 5px rgba(0.1,0.1,0.1,0.1);
+}
+
+
+/* Images of holidays */
+
+.gandhiji{
+    background-image: url(gandhiji.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    background-position: center;
+    /* display: flex ;
+    flex-direction: column; */
+  
+    
+}
+
+.gandhiji:hover::after{
+    content: attr(data-hover);
+    color: rgb(8, 8, 8);
+} 
+
+.dussehra{
+    background-image: url(Ramayan.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    background-position: center;
+    /* display: flex ;
+    flex-direction: column; */
+    
+
+}
+
+
+
+.dussehra:hover::after{
+    content: attr(data-hover);
+    color: rgb(13, 13, 14);
+} 
+
+
+.know{
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Carattere', cursive;
+    
+}
+
+a{
+    color: white;
+}
+
+.link{
+    text-decoration: none;
+    cursor: pointer;
+}
